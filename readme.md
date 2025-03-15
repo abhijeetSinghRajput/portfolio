@@ -2,6 +2,9 @@
 
 Welcome to my portfolio project! This project showcases my skills, projects, and achievements.
 
+## Live Link
+Check out the live version of my portfolio [here](https://aditgiri.netlify.app/).
+
 ## Table of Contents
 - [About Me](#about-me)
 - [Projects](#projects)
