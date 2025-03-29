@@ -217,11 +217,13 @@ nav ul li a:hover {
   background-color: #2a352e;
   box-shadow: 2px 2px 5px 0px #0000003e;
 }
-.profile-photo img{
+
+.profile-photo img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
+
 .light {
   position: fixed;
   aspect-ratio: 1;
@@ -308,6 +310,7 @@ nav ul li a:hover {
 
 #skills .cards {
   display: flex;
+  flex-wrap: wrap;
   gap: 10px;
 
 }
@@ -315,7 +318,7 @@ nav ul li a:hover {
 #projects .cards {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 32px;
 
 }
 
@@ -335,6 +338,13 @@ nav ul li a:hover {
   aspect-ratio: 1/0.65;
   background-color: rgb(42, 53, 46);
   overflow: hidden;
+}
+#projects .card ul li a{
+  display: flex;
+  gap: 2px;
+}
+#projects .card ul li .icon{
+  width: 12px;
 }
 
 .image img {
@@ -406,12 +416,15 @@ nav ul li a:hover {
   grid-gap: 16px;
   margin-bottom: 20px;
 }
-.valid:focus{
+
+.valid:focus {
   border-color: #44bd94;
 }
-.invalid:focus{
+
+.invalid:focus {
   border-color: #b84c4c;
 }
+
 input,
 textarea {
   padding: 15px 20px;
@@ -489,12 +502,18 @@ button:disabled {
 
 
 @media screen and (max-width: 600px) {
-  nav{
-    padding: 12px 0;
+  nav {
+    padding: 8px 0;
   }
-  nav ul{
+
+  nav .profile-photo{
+    width: 32px;
+  }
+
+  nav ul {
     gap: 2px;
   }
+
   #contact-form {
     grid-template-columns: 1fr;
   }
@@ -518,6 +537,10 @@ button:disabled {
     justify-content: center;
   }
 
+  #skills{
+    margin-top: 130px;
+  }
+
   .container {
     padding: 0 10px;
   }
@@ -529,9 +552,6 @@ button:disabled {
 
   #hero .content {
     padding: 0;
-  }
-  .profile-photo{
-    display: none;
   }
 }
 
